@@ -1,0 +1,178 @@
+
+/* VARIABLES */
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+
+/* Mobile */
+@media(max-width: 360px) {
+    .services-container {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 2%;
+        padding: 0%;
+        width: 100%;
+        height: 50%;
+    }
+    .menu-wrap {
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
+
+}
+
+
+
+
+.services-grid {
+    position: relative;
+    padding: 0%;
+    height: 10%;
+    width: 95%;
+    margin: 0%;
+}
+
+
+.services-grid > .services-h1 {
+    position: relative;
+    text-align: center;
+}
+
+
+.image {
+    height: 70%;
+    width: 100%;
+}
+
+
+.img__overlay {
+    position: absolute;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    height: 20%;
+    width: 50%;
+    color: #fff;
+    z-index: 1;
+    top:0%;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.img__overlay:hover {
+    opacity: 1;
+}
+
+
+.img__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+.img__description {
+    font-size: 0.4rem;
+    margin-top: 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media(min-width: 768px) {
+    .services-container {
+        position: absolute;
+        margin-top: 10%;
+        padding: 0%;
+        width: 100%;
+        height: 60%;
+    }
+}
+
+
+
+
+.services-inner {
+
+    top: 10%;
+    width: 95%;
+    height: 110%;
+    position: relative;
+    margin: 0%;
+}
+
+
+.services-grid {
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 95%;
+}
+
+.services-grid .services-h1 {
+    position: relative;
+    text-align: center;
+}
+
+.services-grid > .services-h1 {
+    font-size: 3em;
+}
+
+.services-grid > .img__container {
+    
+    position: relative;
+    width: 45%;
+    height: 35%;
+    float: left;
+    margin: 2%;
+    left: 1%;
+}
+
+.image {
+    
+    width: 100%;
+}
+
+
+.img__overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.img__overlay:hover {
+    opacity: 1;
+}
+
+
+.img__title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.img__description {
+    font-size: 0.8em;
+    margin-top: 1em;
+    width: 70%;
+}
