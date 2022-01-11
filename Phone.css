@@ -1,12 +1,16 @@
 /* Mobile */
 @media screen and (max-width: 360px) {
+    body {
+        position:relative;
+        height: 273vh;
+    }
     .menu-wrap {
         position: fixed;
         height: 50px;
         width: 50px;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 2;
         margin: 0;
     }
     .showcase:before {
@@ -15,15 +19,15 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        width: 103vw;
+        width: 100vw;
         height: 100%;
-        z-index: -1;
+        z-index: -3;
     }
     .showcase {
         background-color: var(--primary-color);
         color: #fff;
         height: 100vh;
-        width: 103vw;
+        width: 100vw;
         position: relative;
     }
     .showcase-inner {
@@ -31,30 +35,55 @@
         width: 100%;
     }
 
+    .showcase-inner > h1 {
+        font-size: 2.5rem;
+    }
+    .showcase-inner > p {
+        margin-top: 2%;
+        font-size: 1.4rem;   
+    }
+
     /* Services */
     .services-container {
-        position: absolute;
+        position: relative;
         padding: 0%;
-        width: 103vw;
-        height: 50%;
+        width: 100vw;
+        height: 58%;
+        margin: 0 auto;
+        background-color: rgb(221, 221, 221);
+        z-index: 1;
+        box-shadow: 0px 2px 50px 10px rgb(41, 41, 41);
+        
     }
          
     .services-grid {
         position: relative;
         padding: 0%;
-        height: 10%;
-        width: 100%;
+        height: 92%;
+        width: 88%;
+        margin: 0 auto;
+        top: 6%;
         
     }
     .services-grid > .services-h1 {
+        font-family: sans-serif, 'Arial';
         position: relative;
         text-align: center;
+        font-size: 2.3rem;
+        text-transform: uppercase;
     }
     
     /* Images */
     .image {
+        display: block;
         height: 70%;
         width: 100%;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+
+    .img__container {
+        position: relative;
     }
     
     
@@ -62,13 +91,15 @@
         position: absolute;
         text-align: center;
         background: rgba(0, 0, 0, 0.6);
-        height: 20%;
-        width: 50%;
+        height: 100%;
+        width: 100%;
+        padding-top: 20%;
         color: #fff;
-        z-index: 1;
-        top:0%;
+        left: 0;
+        top: 0;
         opacity: 0;
         transition: opacity 0.25s;
+        z-index: 2;
     }
     
     .img__overlay:hover {
@@ -77,13 +108,44 @@
     
     
     .img__title {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         font-weight: bold;
+        text-transform: uppercase;
     }
     
     
     .img__description {
-        font-size: 0.4rem;
-        margin-top: 0.25rem;
+        font-size: 0.7rem;
+        margin-top: 0.30rem;
+    }
+
+    .footer {
+        height: 8%;
+        width: 100%;
+        position: relative;
+        background-color: rgb(68, 68, 68);
+    }
+    .footer a {
+        position: absolute;
+        height: 35%;
+        width: 15%;
+        margin: 15% 42%;
+        padding: 0;
+        color: white;
+        background-color: rgb(58, 207, 192);
+        border: none;
+        border-radius: 50%;
+    }
+
+    button.footer-btn {
+        position: absolute;
+        height: 35%;
+        width: 15%;
+        margin: 24% 29%;
+        padding: 0;
+        color: white;
+        background-color: rgb(58, 207, 192);
+        border: none;
+        border-radius: 50%;
     }
 }
