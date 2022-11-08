@@ -2,82 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet" href="style_all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>BitFlow Media</title>
 </head>
 <body>
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-            <div class="menu-overlay">
-                <div class="menu-items">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#">Our Mission</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>    
-    </div>
+    <img id="bg" src="/img/tech_abstract_flow.jpg" alt="">
 
-    <header class="showcase" id="about">
-        <div class="showcase-inner">
+    <header>
+        <!-- nav bar -->
+        <nav class="navbar" id="navbar">
+            <span id="nav-branding"></span>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                    <a href="#" class="nav-link">Our Mission</a>
+                    </li> -->
+                    <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        </nav>
+        <!-- end nav bar-->
+    </header>
+    <div class="tint"></div>
+    <section class="intro" id="welcome">
+        <div class="intro-inner">
             <h1>WELCOME</h1>
             <p>Welcome to BitFlow Media. Our Mission and our number-one Priority is our Service to you in helping bring your Vision to Life in the Modern World.</p>
-            <a href="#" class="btn">Read More</a>
+            <!-- <a href="#" class="btn">Read More</a> -->
         </div>
-    </header>
-    <div class="services-container">
-            <div class="services-grid">
-                    <h1 class="services-h1"><a name="services">Services</a></h1>
-
-                        <div class="img__container">
-                            <img class="image" src="img/Services_Custom-Software_Dev.jpg"Custom Software Solutions>
-                            <div class="img__overlay">
-                            <div class="img__title">Custom Software Solutions</div>
-                            <p class="img__description">Web App Development, Mobile Development</p></div>
-                        </div>
-
-                        <div class="img__container">
-                            <img class="image" src="img/Services_Archviz.jpg"Architectural Visualisation>
-                            <div class="img__overlay">
-                            <div class="img__title"Architectural Visualisation>Architectural Visualisation</div>
-                            <p class="img__description">Real-time 3D Renditions to serve the Property Industry</p></div>
-                        </div>
-
-                        <div class="img__container">
-                            <img class="image" src="img/social_media_marketing.jpg"Social Media Marketing>
-                            <div class="img__overlay">
-                            <div class="img__title">Social Media Marketing</div>
-                            <p class="img__description">Social Media Marketing Management & Strategizing</p></div>
-                        </div>
-                        
-
-                        <div class="img__container">
-                            <img class="image" src="img/cloud-services.jpg"Web Hosting>
-                            <div class="img__overlay">
-                            <div class="img__title">Web Hosting & Cloud Storage Services</div>
-                            <p class="img__description">Website Hosting and Cloud Storage Services</p></div>
-                        </div>
-            </div> <!-- Services-grid-->
-    </div> <!-- Services-container -->
-        <div class="footer">
-            <a href="#about"><button class="footer-btn"><i class="material-icons">arrow_upward</i></button></a>
+    </section>
+    <div class="services-body">
+        <div id="services">
+            <h1 class="services-heading">SERVICES</h1>
         </div>
+            <section class="services-container">
+                <div class="services-grid">
+
+                    <div class="icon__container">
+                            <a href="#custom-code"><span id="ccode"></span></a>
+                        <div class="service-text">
+                            <h1 class="icon__title">Custom Software Solutions</h1>
+                            <p class="img__description">Web App Development, Mobile Development</p>
+                        </div>
+                    </div>
+                    <div class="icon__container">
+                            <a href="#arch-viz"><span id="a-v"></span></a>
+                        <div class="service-text">
+                            <h1 class="icon__title">Architectural Visualisation</h1>
+                            <p class="icon__description">Real-time 3D Renditions for the Property Industry</p>
+                        </div>
+                    </div>
+                    <div class="icon__container">
+                            <a href="#sm-marketing"><span id="sm-marketing"></span></a>
+                        <div class="service-text">
+                            <h1 class="icon__title">Social Media Marketing</h1>
+                            <p class="icon__description">Social Media Marketing Management & Strategizing</p>
+                        </div>
+                    </div>
+                    <div class="icon__container">
+                            <a href="#hosting"><span id="web-hosting"></span></a>
+                        <div class="service-text">
+                            <h1 class="icon__title">Web Hosting & Cloud Storage Services</h1>
+                            <p class="icon__description">Website Hosting and Cloud Storage Services</p>
+                        </div>
+                    </div>
+                </div> <!-- services grid-->
+            </section>
+    </div> 
+    <footer class="footer">
+        <div class="social-media-container">
+            <h3 id="contact">Connect with us</h3>
+            <div class="icon-container">
+                <section class="social-media">
+                    <a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#navbar"><i class="fas fa-chevron-up"></i></a>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <script src="/index.js"></script>
 </body>
 </html>
-                    
-            
-
-
-
-    
-    
-    

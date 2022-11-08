@@ -1,0 +1,821 @@
+
+/* Desktop */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background-color: #10507a;
+}
+li {
+    list-style: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hamburger */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+
+@media(min-width:1280px) {
+    /* NAVBAR */
+    .navbar {
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 98vw;
+        padding: 0 24px;
+        z-index: 2;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        z-index: 4;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #nav-branding::after{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        content: "\f121";
+        font-size: 1.5rem;
+        height: 50px;
+        width: 50px;
+        color: white;
+        }
+        .nav-link{
+            transition: 0.7s ease;
+        }
+        .nav-link:hover{
+            color: red;
+        }
+        div#bg {
+            background-image: url("./img/tech_abstract_flow.jpg");
+            z-index: -2;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: fixed;
+        }
+        .tint{
+            z-index: -1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            height: 250vh;
+            width: 99vw;
+            opacity: 80%;
+            background-color: #4b9ed6;
+        }
+        /* WELCOME */
+        div.intro-inner{
+            position: relative;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 15% 15%;
+            color: white;
+        }
+        div.intro-inner h1{
+            font-family: sans-serif;
+            font-size: 5rem;
+            letter-spacing: 2px;
+        }
+        div.intro-inner p{
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            padding: 35px 150px;
+        }
+        div.intro-inner .btn{
+            background-color: #10507a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 120px;
+            margin: 10% auto;
+            box-sizing: border-box;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+    
+    
+    
+    
+        /* SERVICES */
+        div.services-body{
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            height: 200vh;
+            width: 99vw;
+            margin-top: 20%;
+            padding-top: 10%;
+            background-color: rgb(223, 223, 223);
+            text-align: center;
+        }
+        div.services-heading{
+            position: relative;
+            font-family: Arial;
+            color:black;
+            font-size: 3.5rem;
+            letter-spacing: 0.1rem;
+        }
+        div.services-container{
+            position: relative;
+            height: 200%;
+            width: 90%;
+            text-align: center;
+            margin: 2% auto;
+        }
+        /* Icon structure */
+        div.icon__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 5% 2%;
+            height: 50%;
+            width: 70%;
+            background-color: #ffffff;
+        }
+        div.service-text{
+            margin: 5% 8%;
+        }
+        div.icon__title{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(49, 49, 49);
+            font-size: 1rem;
+            padding: 3px 0px;
+        }
+        div.icon__container p{
+            color: rgb(49, 49, 49);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.6rem;
+            margin: 0% 20%;
+        }
+        span#ccode::after{
+            position: relative;
+            font-family: "Font Awesome 5 Free";
+            content: "\f5fc";
+            font-weight: 600;
+            font-size: 4rem;
+            color: #10507a;
+        }
+        span#a-v::after{
+            position: relative;
+            font-family: "Font Awesome 5 Free";
+            content: "\f729";
+            font-weight: 700;
+            font-size: 4rem;
+            color: #10507a;
+        }
+        span#sm-marketing::after{
+            position: relative;
+            font-family: "Font Awesome 5 Free";
+            content: "\f164";
+            font-weight: 700;
+            font-size: 4rem;
+            color: #10507a;
+        }
+        span#web-hosting::after{
+            position: relative;
+            font-family: "Font Awesome 5 Free";
+            content: "\f1eb";
+            font-weight: 700;
+            font-size: 4rem;
+            color: #10507a;
+        }
+
+    
+    
+
+
+
+
+        /* Social Media Container */
+        div.social-media-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 20vh;
+            width: 99vw;
+            background-color: #10507a;
+        }
+        h3{
+            color: white;
+            font-family: Arial;
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+        .icon-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            height: 50px;
+            width: 250px;
+            margin: 8px 0;
+        }
+        .social-media a{
+            margin: 0px 20px;
+            font-size: 2rem;
+        }
+}
+
+
+        
+
+
+
+
+
+
+
+
+
+/* TABLET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background-color: #10507a;
+}
+li {
+    list-style: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hamburger */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+
+@media(min-width:820px) {
+    /* NAVBAR */
+    .tint{
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100vw;
+        opacity: 80%;
+        background-color: #4b9ed6;
+    }
+    .navbar {
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 98vw;
+        padding: 0 24px;
+        z-index: 2;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        z-index: 4;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #nav-branding::after{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        content: "\f121";
+        font-size: 1.5rem;
+        height: 50px;
+        width: 50px;
+        color: white;
+        }
+        .nav-link{
+            transition: 0.7s ease;
+        }
+        .nav-link:hover{
+            color: red;
+        }
+        img#bg {
+            background-image: url("./img/tech_abstract_flow.jpg");
+            z-index: -2;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: fixed;
+            height: 100vh;
+            width: 150vw;
+        }
+        
+        /* WELCOME */
+        div.intro-inner{
+            position: relative;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 15% 15%;
+            color: white;
+        }
+        .intro-inner h1{
+            font-family: sans-serif;
+            font-size: 5rem;
+            letter-spacing: 2px;
+        }
+        .intro-inner p{
+            font-family: sans-serif;
+            font-size: 1.6rem;
+            padding: 35px 10px;
+        }
+        .intro-inner .btn{
+            background-color: #10507a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 120px;
+            margin: 10% auto;
+            box-sizing: border-box;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+    
+    
+    
+    
+        /* SERVICES */
+        .services-body{
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20%;
+            padding-top: 10%;
+            height: 99vh;
+            width: 100vw;
+            background-color: rgb(223, 223, 223);
+            text-align: center;
+        }
+        .services-heading{
+            position: relative;
+            font-family: Arial;
+            color:black;
+            font-size: 3.5rem;
+            letter-spacing: 0.1rem;
+        }
+        .services-container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            height: 60%;
+            width: 90%;
+            text-align: center;
+            margin: 2% auto;
+        }
+        .services-grid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 150%;
+            width: 80%;
+        }
+        /* Icon structure */
+        .icon__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 2% 0%;
+            height: 50%;
+            width: 90%;
+            background-color: #ffffff;
+        }
+        .service-text{
+            margin: 2% 5%;
+        }
+        .icon__title{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(49, 49, 49);
+            font-size: 1rem;
+            padding: 3px 0px;
+        }
+        .icon__container p{
+            color: rgb(49, 49, 49);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.6rem;
+            margin: 0% 20%;
+        }
+        span#ccode::after{
+            position: relative;
+            font-family: "Font Awesome 5 Free";
+            content: "\f5fc";
+            font-weight: 600;
+            font-size: 4rem;
+            color: #10507a;
+        }
+        span#a-v::after{
+            position: relative;
+            font-family: "Font Awesome 5 Free";
+            content: "\f729";
+            font-weight: 700;
+            font-size: 4rem;
+            color: #10507a;
+        }
+        span#sm-marketing::after{
+            position: relative;
+            font-family: "Font Awesome 5 Free";
+            content: "\f164";
+            font-weight: 700;
+            font-size: 4rem;
+            color: #10507a;
+        }
+        span#web-hosting::after{
+            position: relative;
+            font-family: "Font Awesome 5 Free";
+            content: "\f1eb";
+            font-weight: 700;
+            font-size: 4rem;
+            color: #10507a;
+        }
+
+    
+    
+
+
+
+
+        /* Social Media Container */
+        .social-media-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 20vh;
+            width: 100vw;
+            background-color: #10507a;
+        }
+        h3{
+            color: white;
+            font-family: Arial;
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+        .icon-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            height: 50px;
+            width: 250px;
+            margin: 8px 0;
+        }
+        .social-media a{
+            margin: 0px 20px;
+            font-size: 2rem;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* MOBILE */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    header {
+        background-color: #10507a;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    
+
+
+
+
+    /* NAVBAR */
+    .navbar {
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        z-index: 2;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        z-index: 4;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #nav-branding::after{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        content: "\f121";
+        font-size: 1.5rem;
+        height: 50px;
+        width: 50px;
+        color: white;
+    }
+    .nav-link{
+        transition: 0.7s ease;
+    }
+    .nav-link:hover{
+        color: red;
+    }
+    /* Hamburger initial state */
+    .hamburger{
+        display: none;
+        cursor: pointer;
+    }
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
+    
+
+
+
+
+
+@media(max-width:375px) {
+    .tint{
+        background-color: #4b9ed6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+        position: absolute;
+        height: 150vh;
+        width: 100vw;
+        opacity: 80%;
+    }
+    img#bg {
+        background-image: url("./img/tech_abstract_flow.jpg");
+        z-index: -2;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: fixed;
+        height: 100vh;
+        width: 200vw;
+    }
+    /* hamburger animate */
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /* nav menu */
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #10507a;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0%;
+    }
+
+    
+    /* WELCOME */
+    div.intro-inner{
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 35% 15%;
+        color: white;
+    }
+    .intro-inner h1{
+        font-family: sans-serif;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+    .intro-inner p{
+        font-family: sans-serif;
+        font-size: 1.1rem;
+        padding: 35px 10px;
+    }
+    .intro-inner .btn{
+        background-color: #10507a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 120px;
+        margin: 10% auto;
+        box-sizing: border-box;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+
+
+
+
+    /* SERVICES */
+    .services-body{
+        position:relative;
+        margin-top: 20%;
+        padding-top: 30%;
+        height: 200vh;
+        background-color: rgb(223, 223, 223);
+        text-align: center;
+    }
+    .services-heading{
+        position: relative;
+        font-family: Arial;
+        color:black;
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+    }
+    .services-container{
+        position: relative;
+        height: 80%;
+        width: 80%;
+        text-align: center;
+        margin: 2% auto;
+    }
+    .services-grid{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    /* Icon structure */
+    .icon__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5% auto;
+        height: 50%;
+        width: 95%;
+        background-color: #ffffff;
+    }
+    .service-text{
+        margin: 5% 8%;
+    }
+    .icon__title{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(49, 49, 49);
+        font-size: 1rem;
+        padding: 3px 0px;
+    }
+    .icon__container p{
+        color: rgb(49, 49, 49);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.6rem;
+        margin: 0% 20%;
+    }
+    span#ccode::after{
+        position: relative;
+        font-family: "Font Awesome 5 Free";
+        content: "\f5fc";
+        font-weight: 600;
+        font-size: 4rem;
+        color: #10507a;
+    }
+    span#a-v::after{
+        position: relative;
+        font-family: "Font Awesome 5 Free";
+        content: "\f729";
+        font-weight: 700;
+        font-size: 4rem;
+        color: #10507a;
+    }
+    span#sm-marketing::after{
+        position: relative;
+        font-family: "Font Awesome 5 Free";
+        content: "\f164";
+        font-weight: 700;
+        font-size: 4rem;
+        color: #10507a;
+    }
+    span#web-hosting::after{
+        position: relative;
+        font-family: "Font Awesome 5 Free";
+        content: "\f1eb";
+        font-weight: 700;
+        font-size: 4rem;
+        color: #10507a;
+    }
+
+        
+
+
+
+    /* SOCIAL MEDIA CONTAINER */
+    .social-media-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 20vh;
+        width: 100vw;
+        background-color: #10507a;
+    }
+    h3{
+        color: white;
+        font-family: Arial;
+        font-weight: 300;
+        font-size: 0.9rem;
+    }
+    .icon-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 50px;
+        width: 150px;
+    }
+    .social-media a{
+        margin: 0px 12px;
+    }
+}
